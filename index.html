@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 style="color: blue ;">
+      Cross-site Scripting (XSS) is a client-side code injection attack. The
+      attacker aims to execute malicious scripts in a web browser of the victim
+      by including malicious code in a legitimate web page or web application.
+      The actual attack occurs when the victim visits the web page or web
+      application that executes the malicious code. The web page or web
+      application becomes a vehicle to deliver the malicious script to the
+      user’s browser. Vulnerable vehicles that are commonly used for Cross-site
+      Scripting attacks are forums, message boards, and web pages that allow
+      comments. <br>
+       <br> attacker who exploits a cross-site scripting vulnerability is
+      typically able to: Impersonate or masquerade as the victim user. Carry out
+      any action that the user is able to perform. Read any data that the user
+      is able to access. Capture the user's login credentials. Perform virtual
+      defacement of the web site. Inject trojan functionality into the web site.
+      Preventing cross-site scripting is trivial in some cases but can be much
+      harder depending on the complexity of the application and the ways it
+      handles user-controllable data. In general, effectively preventing XSS
+      vulnerabilities is likely to involve a combination of the following
+      measures: Filter input on arrival. At the point where user input is
+      received, filter as strictly as possible based on what is expected or
+      valid input. Encode data on output. At the point where user-controllable
+      data is output in HTTP responses, encode the output to prevent it from
+      being interpreted as active content. Depending on the output context, this
+      might require applying combinations of HTML, URL, JavaScript, and CSS
+      encoding. Use appropriate response headers. <br>
+      <br>To prevent XSS in HTTP
+      responses that aren't intended to contain any HTML or JavaScript, you can
+      use the Content-Type and X-Content-Type-Options headers to ensure that
+      browsers interpret the responses in the way you intend. Content Security
+      Policy. As a last line of defense, you can use Content Security Policy
+      (CSP) to reduce the severity of any XSS vulnerabilities that still occur.
+    </h2>
+  </body>
+</html>
